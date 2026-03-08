@@ -2,8 +2,8 @@ package mooc;
 
 public class Course
 {
-    private String myLabel;
-    private int myVolume;
+    private String label;
+    private int volume;
     
     public Course(String name, int hours)
     {
@@ -11,13 +11,13 @@ public class Course
             throw new IllegalArgumentException("name is null");
         if (hours <= 0)
             throw new IllegalArgumentException("hours is negative");
-        myLabel = name;
-        myVolume = hours;
+        this.label = name;
+        this.volume = hours;
     }
     
-    public String getLabel() { return myLabel;  }
+    public String getLabel() { return label;  }
     
-    public int getVolume() { return myVolume; }
+    public int getVolume() { return volume; }
     
     @Override
     public String toString() { return "Course: " + getLabel(); }

@@ -1,0 +1,43 @@
+@startuml
+
+class Person {
+    + String myName
+    + Person(String name)
+}
+
+class Course {
+    + String myLabel
+    + int myVolume
+    + Course(String name, int hours)
+}
+
+class Enrollment {
+    + Integer mark [0..1]
+    + Enrollment(Person s, Course c)
+    + setMark(int mark): void
+    + studentHasMark(): boolean
+}
+
+class Platform {
+    + Platform()
+    + addCourse(Course c): void
+    + students(): Person[*]
+    + courses(): Course[*]
+    + enrollments(): Enrollment[*]
+    + registerStudent(Person s): void
+    + enroll(Person s, Course c): void
+    + withdraw(Person s, Course c): void
+    + setMark(Person s, Course c, int mark): void
+    + getMark(Person s, Course c): int
+    + studentsForCourse(Course c): Person[*]
+    + coursesForStudent(Person s): Course[*]
+    + emptyCourses(): Course[*]
+}
+
+Enrollment --> "1 student" Person 
+Enrollment --> "1 course" Course 
+Platform --> "0..*" Enrollment : manages
+Platform --> "0..* courses" Course : offers
+Platform --> "0..* students" Person : registers
+
+@enduml
