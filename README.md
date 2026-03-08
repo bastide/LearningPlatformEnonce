@@ -1,4 +1,4 @@
-## Enoncé de l'exercice "Learning Platform"
+# Enoncé de l'exercice "Learning Platform"
 
 Une plateforme d’enseignement par correspondance propose un certain nombre de cours en ligne. Les personnes enregistrées auprès de la plateforme peuvent s’inscrire à des cours en ligne, et recevoir une note pour les cours qu’elles suivent. On veut modéliser un système permettant de gérer l’enregistrement des étudiants à la plateforme, l’inscription des personnes enregistrées à des cours dispensés par la plateforme, et l’attribution des notes.
 
@@ -18,9 +18,9 @@ On fournit le diagramme de classes ci-dessous :
 
 ---
 
-#### Travail à réaliser :
+## Travail à réaliser
 
-**1° Partie :** Fournir une implémentation en Java sous la forme d’un projet Maven, conforme au jeu de tests unitaires fournis dans le projet. Vous devez obtenir 100% de couverture de tests sur la classe `Platform`, rajouter des tests unitaires si nécessaire. L’exercice doit être remis en donnant l’adresse du dépôt github où le code source est déposé (Barème indicatif : 11 points)
+**1° Partie :** Fournir une implémentation en Java sous la forme d’un projet Maven, conforme au jeu de tests unitaires fournis dans le projet. Vous devez obtenir 100% de couverture de tests sur la classe `Platform`, vous pouvez modifier les tests existants ou en ajouter si nécessaire. L’exercice doit être remis en donnant l’adresse du dépôt github où le code source est déposé (Barème indicatif : 11 points)
 
 **2° Partie :** Vous devez ajouter les fonctionnalités suivantes (barème indicatif : 9 points) :
 
